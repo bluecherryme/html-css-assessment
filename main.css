@@ -1,7 +1,6 @@
 html{
     font-size: 16px;
     font-family: 'Open Sans';
-    color: #40666d;
 }
 
 a, a:hover, a:active{
@@ -9,31 +8,105 @@ a, a:hover, a:active{
     color: inherit;
 }
 
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/main-bg.jpeg);
+    background-size: cover;
+    
+}
+
+svg{
+    fill: white;
+}
+
+svg:hover{
+    fill: #FF3BAA;
+}
+
 button{
-    background-color: white;
+    background: none;
     border: none;
 }
 
-button:focus {
-    outline: none !important;
+button:focus, button:active{
+    border: none;
+    outline: none;
 }
 
-
-/* ------------HEADER ---------*/
-
+button:hover{
+    border: 1px solid #FF3BAA;
+}
 
 
 /*---------- NAV BAR ---------------*/
 
+nav{
+    width: 100vw;
+    height: 100px;
+    display: block;
+}
 
-/*---------- HEADER MAIN -----------*/
+.small{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    align-items: center;
+}
+
+.social svg{
+    margin: 10px;
+}
+
+.large{
+    max-width: 900px;
+    margin: 50px auto;
+    top: 0;
+    display: none;
+}
+
+.large ul{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.large li{
+    padding: 5px;
+}
+
+.large li:hover{
+    border-bottom: 2px solid #FF3BAA;
+}
 
 
+/*---------- MAIN ---------------*/
 
-/*---------- MAIN CONTENT -----------*/
+main{
+    color: white;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-weight: 800;
+}
 
+h1{
+    font-size: 80px;
+}
 
+h2{
+    font-size: 20px;
+}
 
+main svg:hover{
+    fill: #FF3BAA !important;
+}
 
 /*---------MEDIA QUERIES --------------*/
 
@@ -44,8 +117,13 @@ button:focus {
 }
 
 @media(min-width:750px){
-    
+    .small{
+        display: none;
+    }
    
+    .large{
+        display: block;
+    }
 }
 
 
