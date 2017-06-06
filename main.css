@@ -1,0 +1,56 @@
+html{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    color: #40666d;
+}
+
+a, a:hover, a:active{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+button{
+    background-color: white;
+    border: none;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+
+/* ------------HEADER ---------*/
+
+
+
+/*---------- NAV BAR ---------------*/
+
+
+/*---------- HEADER MAIN -----------*/
+
+
+
+/*---------- MAIN CONTENT -----------*/
+
+
+
+
+/*---------MEDIA QUERIES --------------*/
+
+
+@media(min-width:450px){
+    
+    
+}
+
+@media(min-width:750px){
+    
+   
+}
+
+
+@media(min-width:970px){
+    
+   
+}
+
